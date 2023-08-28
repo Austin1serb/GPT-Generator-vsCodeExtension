@@ -1,0 +1,64 @@
+{
+  "name": "gpt-code-generator",
+  "displayName": "GPT Code Generator",
+  "description": "No more copy-pasting! Use GPT to generate code from comments inside your editor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateWithGPT",
+        "title": "Generate with GPT"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "GPT Code Generator",
+      "properties": {
+        "gptCodeGenerator.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API Key for GPT-3.5 turbo"
+        }
+      }
+    }
+  },
+  "menus": {
+    "editor/context": [
+      {
+        "command": "extension.generateWithGPT",
+        "when": "editorHasSelection"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.81.0",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1"
+  }
+}
