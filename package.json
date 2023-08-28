@@ -3,7 +3,7 @@
   "displayName": "GPT Code Generator",
   "publisher": "SerbByteDevelopment",
   "description": "No more copy-pasting! Use GPT to generate code from comments inside your editor.",
-  "icon":"https://github.com/Austin1serb/img-for-extension/blob/main/icon.jpg?raw=true",
+  "icon":"icon.jpg",
   "version": "0.0.1",
   "repository": {
     "type": "git",
