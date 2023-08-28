@@ -3,7 +3,7 @@
   "displayName": "GPT Code Generator",
   "publisher": "SerbByteDevelopment",
   "description": "No more copy-pasting! Use GPT to generate code from comments inside your editor.",
-  "icon":"icon.jpg",
+  "icon": "icon.jpg",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -15,9 +15,7 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "*"
-  ],
+  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -26,25 +24,25 @@
         "title": "Generate with GPT"
       }
     ],
-    "configuration": {
-      "type": "object",
-      "title": "GPT Code Generator",
-      "properties": {
-        "gptCodeGenerator.apiKey": {
-          "type": "string",
-          "default": "",
-          "description": "OpenAI API Key for GPT-3.5 turbo"
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.generateWithGPT",
+          "when": "editorHasSelection"
         }
-      }
+      ]
     }
   },
-  "menus": {
-    "editor/context": [
-      {
-        "command": "extension.generateWithGPT",
-        "when": "editorHasSelection"
+  "configuration": {
+    "type": "object",
+    "title": "GPT Code Generator",
+    "properties": {
+      "gptCodeGenerator.apiKey": {
+        "type": "string",
+        "default": "",
+        "description": "OpenAI API Key for GPT-3.5 turbo"
       }
-    ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
