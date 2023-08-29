@@ -50,14 +50,20 @@ function getApiKeyFromConfig() {
 }
 
 // Prompt the user to enter the API key
-function promptForApiKey() {
-    vscode.window.showInputBox({ prompt: 'Enter your OpenAI API Key' }).then(value => {
-        if (value) {
-            const config = vscode.workspace.getConfiguration('gptCodeGenerator');
-            config.update('apiKey', value, true);
-        }
-    });
+async function promptForApiKey() {
+    const value = await vscode.window.showInputBox({ prompt: 'Enter your OpenAI API Key' });
+    if (value) {
+        console.log("Got API key");
+        const config = vscode.workspace.getConfiguration('gptCodeGenerator');
+        await config.update('apiKey', value, vscode.ConfigurationTarget.Global);
+        console.log("API Key should now be updated.");
+    } else {
+        console.log("No API Key entered.");
+    }
 }
+
+
+
 
 // Get the code context around the selection
 function getCodeContext(document, selection) {
@@ -80,12 +86,12 @@ async function callOpenAI(context, comment, languageId, document) {
     let apiKey = config.get('apiKey');
 
     if (!apiKey) {
-        vscode.window.showInputBox({ prompt: 'Enter your OpenAI API Key' }).then(value => {
-            if (value) {
-                config.update('apiKey', value, true);
-                apiKey = value;  // Update apiKey for this session
-            }
-        });
+        await promptForApiKey();
+        apiKey = getApiKeyFromConfig();
+
+        if (!apiKey) {
+            return vscode.window.showErrorMessage('Error uploading API key'); 
+        }
     }
 
     const endpoint = "https://api.openai.com/v1/chat/completions";

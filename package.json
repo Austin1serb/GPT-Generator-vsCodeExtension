@@ -24,6 +24,17 @@
         "title": "Generate with GPT"
       }
     ],
+    "configuration": {
+      "type": "object",
+      "title": "GPT Code Generator",
+      "properties": {
+        "gptCodeGenerator.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API Key for GPT-3.5 turbo"
+        }
+      }
+    },
     "menus": {
       "editor/context": [
         {
@@ -31,17 +42,6 @@
           "when": "editorHasSelection"
         }
       ]
-    }
-  },
-  "configuration": {
-    "type": "object",
-    "title": "GPT Code Generator",
-    "properties": {
-      "gptCodeGenerator.apiKey": {
-        "type": "string",
-        "default": "",
-        "description": "OpenAI API Key for GPT-3.5 turbo"
-      }
     }
   },
   "scripts": {
