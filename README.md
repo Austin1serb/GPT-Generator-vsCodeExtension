@@ -30,8 +30,8 @@ Demo:
 Context Aware:
 <img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763" alt="demo" />
 
-
-
+Great with Algorithms!
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/c3774482-e7a1-4469-9b23-e508a4449c03" alt="demo" />
 
 
 
