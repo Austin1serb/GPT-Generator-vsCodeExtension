@@ -14,8 +14,10 @@ Once logged in, click on your account in the top right corner.
 Select "View API Keys" from the drop-down menu.
 Click the button "Create a new key."
 Copy the key and paste it into the extension's settings under gptCodeGenerator.apiKey.
-Press cmd + shift + p (Command Palette) and search for "Generate with GPT", click that. if an api ket is not yet set, then you will be prompted to enter your API key.
 
+***
+Press cmd + shift + p (Command Palette) and search for "Generate with GPT", click that. if an api ket is not yet set, then you will be prompted to enter your API key.
+***
 Features
 
 🔹 Supports all programming languages!
