@@ -25,8 +25,11 @@ Features
 🔹 Code Generation:
 Type a comment describing what you want, and our extension will generate the corresponding code snippet right below it. Supports multiple programming languages!
 Demo:
-<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="demo" width='50%' height='auto'/>
-![c8edc5cd-bce8-4fd6-8c40-6e096abdbc7a](https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67)
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="demo" />
+
+Context Aware:
+<img src="[https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67](https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763)" alt="demo" />
+
 
 
 
