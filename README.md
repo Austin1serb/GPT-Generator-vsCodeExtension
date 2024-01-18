@@ -18,14 +18,7 @@ Copy the key and paste it into the extension's settings under gptCodeGenerator.a
 ***
 Press cmd + shift + p (Command Palette) and search for "Generate with GPT", click that. if an api ket is not yet set, then you will be prompted to enter your API key.
 ***
-Features
-
-🔹 Supports all programming languages!
-
-🔹 Easy-to-use interface with one-click generation
-
-🔹 Code Generation:
-Type a comment describing what you want, and our extension will generate the corresponding code snippet right below it. Supports multiple programming languages!
+***
 Demo:
 <img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="demo" />
 
@@ -34,6 +27,16 @@ Context Aware:
 
 Great with Algorithms!
 <img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/c3774482-e7a1-4469-9b23-e508a4449c03" alt="demo" />
+***
+
+Features
+
+🔹 Supports all programming languages!
+
+🔹 Easy-to-use interface with one-click generation
+
+🔹 Code Generation:
+Type a comment describing what you want, and our extension will generate the corresponding code snippet right below it. Supports multiple programming languages!
 
 
 
