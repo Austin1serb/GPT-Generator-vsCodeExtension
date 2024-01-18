@@ -28,7 +28,7 @@ Demo:
 <img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="demo" />
 
 Context Aware:
-<img src="[https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67](https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763)" alt="demo" />
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67](https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763" alt="demo" />
 
 
 
