@@ -4,7 +4,7 @@
   "publisher": "SerbByteDevelopment",
   "description": "No more copy-pasting! Use GPT to generate code from comments inside your editor.",
   "icon": "icon.jpg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Austin1serb/GPT-Generator-vsCodeExtension.git"
