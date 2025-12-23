@@ -1,6 +1,9 @@
-GPT-Code Generator for VSCode
+# GPT-Code Generator for VSCode
 
 GPT Code Generator is a powerful Visual Studio Code extension that leverages the capabilities of OpenAI's GPT-3.5 Turbo to assist you in your software development process. The extension aims to make your coding experience smoother and more efficient by generating code snippets on the fly.
+
+Built by [Serbyte Development (Seattle WA)](https://www.serbyte.net/) with a focus on AI automation and custom software systems: https://www.serbyte.net/services/management
+
 
 ❗Important: API Key Requirement
 
@@ -37,9 +40,6 @@ Features
 
 🔹 Code Generation:
 Type a comment describing what you want, and our extension will generate the corresponding code snippet right below it. Supports multiple programming languages!
-
-
-
 
 🔹 Context Awareness:
 Understands the context in which you are coding. Whether you're working in React, Angular, or just a vanilla JavaScript file, the generated code will fit right in.
@@ -82,31 +82,5 @@ Please refer to the GitHub issues section for a list of known issues and to repo
 
 Release Notes
 
-1.0.0
-Initial release of GPT-Code Generator
-
-For More Information
-
-email me at austin.serb@Icloud.com
-
-Visual Studio Code's Markdown Support
-Markdown Syntax Reference
-Enjoy coding with GPT-Code Generator!
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-- [Visual Studio Code&#39;s Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-**Enjoy!**
+1.0.1
+updated packages and dependencies
