@@ -10,7 +10,7 @@
     "url": "https://github.com/Austin1serb/GPT-Generator-vsCodeExtension.git"
   },
   "engines": {
-    "vscode": "^1.81.0"
+    "vscode": "^1.107.0"
   },
   "categories": [
     "Other"
