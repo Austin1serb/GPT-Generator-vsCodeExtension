@@ -2,17 +2,46 @@
   "name": "gpt-code-generator",
   "displayName": "GPT Code Generator",
   "publisher": "SerbByteDevelopment",
-  "description": "No more copy-pasting! Use GPT to generate code from comments inside your editor.",
+  "description": "Generate code in VS Code from comments, prompts, and selected text using the OpenAI API.",
   "icon": "icon.jpg",
   "version": "1.0.2",
+  "license": "MIT",
+  "author": {
+    "name": "Austin Serb",
+    "url": "https://www.serbyte.net/"
+  },
+  "homepage": "https://www.serbyte.net/",
   "repository": {
     "type": "git",
     "url": "https://github.com/Austin1serb/GPT-Generator-vsCodeExtension.git"
   },
+  "bugs": {
+    "url": "https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/issues",
+    "email": "info@serbyte.net"
+  },
+  "pricing": "Free",
+  "galleryBanner": {
+    "color": "#0f172a",
+    "theme": "dark"
+  },
+  "keywords": [
+    "gpt",
+    "openai",
+    "ai",
+    "code generation",
+    "code generator",
+    "developer tools",
+    "vscode",
+    "visual studio code",
+    "productivity",
+    "automation"
+  ],
   "engines": {
-    "vscode": "^1.107.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
+    "Machine Learning",
+    "Programming Languages",
     "Other"
   ],
   "activationEvents": [],
@@ -31,7 +60,7 @@
         "gptCodeGenerator.apiKey": {
           "type": "string",
           "default": "",
-          "description": "OpenAI API Key for GPT-3.5 turbo"
+          "description": "OpenAI API key used to generate code."
         }
       }
     },

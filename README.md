@@ -1,86 +1,121 @@
-# GPT-Code Generator for VSCode
+# GPT Code Generator for VS Code
 
-GPT Code Generator is a powerful Visual Studio Code extension that leverages the capabilities of OpenAI's GPT-3.5 Turbo to assist you in your software development process. The extension aims to make your coding experience smoother and more efficient by generating code snippets on the fly.
+GPT Code Generator is a Visual Studio Code extension that helps you generate code from comments, prompts, and selected text using the OpenAI API.
 
-Built by [Serbyte Development (Seattle WA)](https://www.serbyte.net/) with a focus on AI automation and custom software systems: https://www.serbyte.net/services/management
+Write what you want, run **Generate with GPT**, and the extension inserts the generated code into your editor.
 
+Built by [Serbyte Web Design & Development](https://www.serbyte.net/), a software and web development company that builds custom websites, AI integrations, automation systems, and developer tools.
 
-❗Important: API Key Requirement
+## Features
 
-Before you can use the GPT-Code Generator extension, you must enter your OpenAI API key. Upon the first activation, the extension will prompt you to input your API key. You can also manually set this key in the VSCode settings under gptCodeGenerator.apiKey.
+* Generate code from comments or selected text
+* Works across programming languages
+* Supports context-aware code generation
+* Inserts generated code directly into your editor
+* Uses your own OpenAI API key
+* Simple command palette and context menu workflow
 
-Free initial Set Up:
-To set your own API key:
+## API Key Required
 
-Go to OpenAI's website: https://platform.openai.com/ to create one.
-Once logged in, click on your account in the top right corner.
-Select "View API Keys" from the drop-down menu.
-Click the button "Create a new key."
-Copy the key and paste it into the extension's settings under gptCodeGenerator.apiKey.
+This extension requires your own OpenAI API key.
 
-***
-Press cmd + shift + p (Command Palette) and search for "Generate with GPT", click that. if an api ket is not yet set, then you will be prompted to enter your API key.
-***
-***
-Demo:
-<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="demo" />
+To add your API key:
 
-Context Aware:
-<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763" alt="demo" />
+1. Go to the OpenAI API keys page.
+2. Create or copy your API key.
+3. Open VS Code settings.
+4. Search for `gptCodeGenerator.apiKey`.
+5. Paste your API key into the setting.
 
-Great with Algorithms!
-<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/c3774482-e7a1-4469-9b23-e508a4449c03" alt="demo" />
-***
+You can also run the extension for the first time and enter your API key when prompted.
 
-Features
+## Usage
 
-🔹 Supports all programming languages!
+### Option 1: Command Palette
 
-🔹 Easy-to-use interface with one-click generation
+1. Press `Cmd + Shift + P` on Mac or `Ctrl + Shift + P` on Windows/Linux.
+2. Search for **Generate with GPT**.
+3. Run the command.
+4. Enter your prompt or use selected code as context.
 
-🔹 Code Generation:
-Type a comment describing what you want, and our extension will generate the corresponding code snippet right below it. Supports multiple programming languages!
+### Option 2: Right-Click Menu
 
-🔹 Context Awareness:
-Understands the context in which you are coding. Whether you're working in React, Angular, or just a vanilla JavaScript file, the generated code will fit right in.
+1. Highlight the code or text you want to use as context.
+2. Right-click in the editor.
+3. Select **Generate with GPT**.
 
-COMING SOON:
+### Option 3: Insert Code in a Specific Place
 
-🔹 Refactoring Assistant:
-Simplify your code automatically. Identifies patterns and code smells, offering refactoring options to improve code quality.
+Write:
 
-🔹 Error Handling:
-Automatically generate error-handling code. Make your applications robust without the extra hassle.
+```txt
+insert code here
+```
 
-🔹 Unit Tests:
-Generate unit tests for your newly created code, ensuring it not only works as expected but continues to do so in the future.
+Then run **Generate with GPT** and describe the code you want generated.
 
-🔹 Interactive Mode (Optional):
-Have a more conversational experience with the code generator, refining your requirements through back-and-forths before the code gets generated.
+## Demo
 
-Usage
+### Basic Code Generation
 
-🔹 Highlight the text where you want to generate code.
-Right-click to open the context menu.
-Click on "Generate with GPT" to generate the code snippet.
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/252d82fb-1888-41b2-a56b-6a5f67620c67" alt="GPT Code Generator demo" />
 
-🔹 If you want to generate code in a specific area, just write "insert code here" and the code will be generated there.
+### Context-Aware Generation
 
-VSCode version 1.50 or higher
-An internet connection for API calls
-Extension Settings
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/62281612-efa2-4859-8968-a6d9bf93d763" alt="Context-aware code generation demo" />
+
+### Algorithm Help
+
+<img src="https://github.com/Austin1serb/GPT-Generator-vsCodeExtension/assets/128577470/c3774482-e7a1-4469-9b23-e508a4449c03" alt="Algorithm code generation demo" />
+
+## Extension Settings
 
 This extension contributes the following settings:
 
-gptCodeGenerator.enable: Enable/disable this extension.
-gptCodeGenerator.apiKey: Set your OpenAI API key.
-Known Issues:
+```txt
+gptCodeGenerator.enable
+```
 
-There may be a bug where after right clicking the "Generate With GPT" option may not appear in the menu, to overcome this right click and then select command palette, then select generate with GPT.
+Enable or disable the extension.
 
-Please refer to the GitHub issues section for a list of known issues and to report new ones.
+```txt
+gptCodeGenerator.apiKey
+```
 
-Release Notes
+Set your OpenAI API key.
 
-1.0.1
-updated packages and dependencies
+## Requirements
+
+* Visual Studio Code 1.50 or higher
+* Internet connection
+* OpenAI API key
+
+## Known Issues
+
+In some cases, the right-click **Generate with GPT** option may not appear immediately.
+
+If that happens:
+
+1. Right-click in the editor.
+2. Open the command palette.
+3. Run **Generate with GPT** from there.
+
+You can report issues in the GitHub repository.
+
+## Release Notes
+
+### 1.0.0
+
+* Initial release of GPT-Code Generator
+
+### 1.0.1
+
+* Updated packages and dependencies
+
+### 1.0.2
+
+* Added support for context-aware code generation
+
+## About Serbyte Web Design & Development
+
+[Serbyte Web Design & Development](https://www.serbyte.net/) builds custom websites, web applications, AI integrations, automation workflows, SEO systems, and developer tools.
