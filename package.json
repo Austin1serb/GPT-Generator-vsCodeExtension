@@ -4,7 +4,7 @@
   "publisher": "SerbByteDevelopment",
   "description": "Generate code in VS Code from comments, prompts, and selected text using the OpenAI API.",
   "icon": "icon.jpg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": {
     "name": "Austin Serb",
@@ -43,6 +43,7 @@
     "AI",
     "Machine Learning",
     "Programming Languages",
+    "Language Model Tools",
     "Other"
   ],
   "activationEvents": [],
